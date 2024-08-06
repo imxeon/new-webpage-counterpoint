@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counterpoint students | educators</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: rgb(62, 142, 212);
+        background-image: url(./contact-breadcum.jpg);
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+      }
+
+      #flex-box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* (horizontal) for flex items */
+        justify-content: center; /* (vertical) for flex items */
+        margin: auto; /* center alignment for section*/
+        height: 95vh;
+        /* width: 95%; */
+        /* background-color: #ebeb2b; */
+      }
+
+      #logo-container {
+        width: 95%;
+        max-width: 500px;
+        /* background-color: rgb(241, 100, 34); */
+      }
+
+      #logo-img {
+        width: 100%;
+      }
+
+      #button-container {
+        width: 78%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        margin-top: 10px;
+        /* background-color: rgb(241, 100, 34); */
+      }
+
+      a {
+        /*wrapping up buttons*/
+        /* background-color: aquamarine; */
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+        height: 55px;
+        border-radius: 13px;
+        font-size: 1.3rem;
+        opacity: 0.9;
+        border: 1px solid black;
+      }
+
+      button:active {
+        font-size: 1.4rem;
+      }
+
+      /* screen wider than 768px (tablet) */
+      @media (min-width: 769px) {
+        #button-container {
+          flex-direction: row;
+          width: 57%;
+          /* background-color: black; */
+        }
+
+        button {
+          height: 65px;
+          font-size: 1.4rem;
+        }
+
+        button:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        button:active {
+          background-color: white;
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="flex-box-container">
+        <div id="logo-container">
+          <img id="logo-img" src="./slider-logo.png" alt="logo" />
+        </div>
+        <div id="button-container">
+          <a href="https://dvkserver.in/counterpointedu.in/"><button>For students</button></a>
+          <a href="https://www.example.com"><button>For educators</button></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
