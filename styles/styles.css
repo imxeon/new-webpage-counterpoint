@@ -1,86 +1,319 @@
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* --------HEADER------------- */
+
+header {
+  max-width: 1800px;
+  margin: auto;
+}
+
+#header-logo {
+  width: 80%;
+}
+
+#navbar-desktop {
+  display: none;
+}
+
+/* -------------MAIN START---------------- */
+
+main {
+  max-width: 1800px;
+  margin: auto;
+}
+
+#first-section-logo-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* (horizontal) for flex items */
+  justify-content: center; /* (vertical) for flex items */
+  margin: auto; /* center alignment for section*/
+  height: 60vh;
+  background-image: url(../images/contact-breadcum.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  /* background-color: #ebeb2b; */
+}
+
+#first-section-logo-container {
+  width: 95%;
+  max-width: 500px;
+  /* background-color: rgb(241, 100, 34); */
+}
+
+#first-section-logo-img {
+  width: 100%;
+}
+
+#first-section-button-container {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  /* background-color: rgb(241, 100, 34); */
+}
+
+.first-section-button-links-container {
+  /*button-wrapper*/
+  /* background-color: aquamarine; */
+  width: 100%;
+}
+
+.first-section-button {
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  opacity: 0.95;
+  border: 1px solid black;
+}
+
+.first-section-button:active {
+  /*avoiding hover beacause of mobile layout*/
+  font-size: 1.4rem;
+}
+
+#second-section-who-we-are {
+  margin: 20px auto;
+  padding-top: 17px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+}
+
+#second-section-who-we-are h1 {
+  margin-bottom: 11px;
+}
+
+#second-section-image {
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#third-section-our-partner-schools {
+  margin: 40px auto;
+  width: 85%;
+  text-align: center;
+  /* background-color: black; */
+}
+
+#carousel {
+  /* background-color: bisque; */
+  width: 90%;
+  margin-left: 20px;
+}
+
+/* bootstrap carousel */
+
+.carousel-item-image {
+  width: 44%;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 0 15px 15px 0;
+}
+
+#fourth-section-team-members {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+#team-members-container {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  /* background-color: aquamarine; */
+}
+
+.team-member-profile {
+  box-sizing: content-box;
+  width: 85%;
+  background-color: rgb(244, 243, 243);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+
+.team-member-image {
+  border: 1px dotted rgb(168, 168, 168);
+  border-radius: 50%;
+}
+
+.team-member-role {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.team-member-name {
+  font-size: 1.5rem;
+}
+
+/* screen wider than 767px (tablet) */
+@media (min-width: 768px) {
+  /*----------First-section-button-container--------*/
+
+  #first-section-button-container {
+    flex-direction: row;
+    width: 57%;
+    /* background-color: black; */
   }
 
-  body {
-    background-color: rgb(62, 142, 212);
-    background-image: url(../images/contact-breadcum.jpg);
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+  .first-section-button {
+    height: 65px;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
-  #flex-box-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* (horizontal) for flex items */
-    justify-content: center; /* (vertical) for flex items */
-    margin: auto; /* center alignment for section*/
-    height: 95vh;
-    /* width: 95%; */
-    /* background-color: #ebeb2b; */
+  .first-section-button:active {
+    opacity: 1;
+    background-color: white;
+    font-size: 1.7rem;
   }
 
-  #logo-container {
-    width: 95%;
-    max-width: 500px;
-    /* background-color: rgb(241, 100, 34); */
+  /* ------Third-section-partner-schools---------- */
+
+  #third-section-our-partner-schools {
+    margin-top: 100px;
   }
 
-  #logo-img {
-    width: 100%;
+  #carousel {
+    /* background-color: bisque; */
+    width: 90%;
+    padding-left: 50px;
+    margin: auto;
   }
 
-  #button-container {
-    width: 78%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    margin-top: 10px;
-    /* background-color: rgb(241, 100, 34); */
+  /* ---------Fourth-section-our-team---------- */
+
+  #fourth-section-team-members {
+    margin-top: 100px;
   }
 
-  a {
-    /*wrapping up buttons*/
+  #team-members-container {
+    width: 85%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     /* background-color: aquamarine; */
-    width: 100%;
   }
 
-  button {
+  .team-member-profile {
+    width: 47%;
+  }
+}
+
+/*----------Laptop screen 1024px------*/
+
+@media (min-width: 1024px) {
+  /* ---------header / navbar */
+
+  #navbar-mobile-tablet {
+    display: none;
+  }
+
+  #navbar-desktop {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 80%;
+    height: 80px;
+  }
+
+  #nav-links {
+    width: 35%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-links a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* ------first-section------- */
+
+  #first-section-logo-button {
+    width: 85%;
+    height: 65vh;
+    border-radius: 25px;
+  }
+
+  #first-section-logo-container {
+    height: 150px;
+  }
+
+  .first-section-button {
+    height: 75px;
+  }
+
+  /* ----Second section----- */
+
+  #second-section-who-we-are {
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  #second-section-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: justify;
+    max-width: 1040px;
+  }
+
+  #paragraphs {
+    /* flex: 1; */
+    width: 65%;
+    padding: 10px;
+    /* max-width: 430px; */
+    /* height: 100%; */
+  }
+
+  #second-section-image-container {
+    flex: 1;
+    max-width: 430px;
+  }
+
+  #second-section-image {
+    border-radius: 15px;
+    margin: 0;
+  }
+
+  /*---------third-section-------- */
+
+  #carousel {
     width: 100%;
-    height: 55px;
-    border-radius: 13px;
-    font-size: 1.3rem;
-    opacity: 0.9;
+    margin: 0;
+    /* background-color: aquamarine; */
+  }
+
+  /* bootstrap carousel */
+
+  .carousel-item-image {
+    width: 20%;
     border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
   }
-
-  button:active {
-    font-size: 1.4rem;
-  }
-
-  /* screen wider than 768px (tablet) */
-  @media (min-width: 769px) {
-    #button-container {
-      flex-direction: row;
-      width: 57%;
-      /* background-color: black; */
-    }
-
-    button {
-      height: 65px;
-      font-size: 1.4rem;
-    }
-
-    button:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    button:active {
-      background-color: white;
-      font-size: 1.5rem;
-    }
-  }
+}
