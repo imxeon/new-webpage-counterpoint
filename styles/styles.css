@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  font-family: roboto;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
 
 header {
   max-width: 1800px;
+  min-width: 320px;
   margin: auto;
 }
 
@@ -26,6 +28,7 @@ header {
 
 main {
   max-width: 1800px;
+  min-width: 320px;
   margin: auto;
 }
 
@@ -35,7 +38,10 @@ main {
   align-items: center; /* (horizontal) for flex items */
   justify-content: center; /* (vertical) for flex items */
   margin: auto; /* center alignment for section*/
-  height: 60vh;
+  /* height: 55vh; */
+  height: 400px;
+  /* max-height: 400px;
+  min-height: 400px; */
   background-image: url(../images/contact-breadcum.jpg);
   background-size: cover;
   background-repeat: repeat;
@@ -43,8 +49,8 @@ main {
 }
 
 #first-section-logo-container {
-  width: 95%;
-  max-width: 500px;
+  width: 90%;
+  max-width: 500px; /*Limiting size in bigger screens*/
   /* background-color: rgb(241, 100, 34); */
 }
 
@@ -53,35 +59,72 @@ main {
 }
 
 #first-section-button-container {
-  width: 90%;
-  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
+  margin-top: 20px;
+  width: 77%;
+  max-width: 425px;
+  /* height: 40%; */
+  height: 185px;
+  /* max-height: 142px; */
   /* background-color: rgb(241, 100, 34); */
 }
 
 .first-section-button-links-container {
   /*button-wrapper*/
-  /* background-color: aquamarine; */
+  /* background-color: rgb(176, 20, 238); */
+  margin-top: 2px;
   width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.first-section-button {
+.first-section-first-button, 
+.first-section-second-button {  /* This class is common to both button styling*/
   width: 100%;
-  height: 55px;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  opacity: 0.95;
-  border: 1px solid black;
+  height: 100%;
+  border-radius: 17px;
+  font-size: 1.8rem;
+  opacity: 0.89;
+  font-weight: 405;
 }
 
-.first-section-button:active {
+.first-section-first-button {
+  box-shadow: inset 0 -6px rgb(245, 27, 49);
+  border: 1px solid rgb(245, 27, 49);
+}
+
+.first-section-first-button:active {
   /*avoiding hover beacause of mobile layout*/
-  font-size: 1.4rem;
+  position: absolute;
+  top: 9px;
+  opacity: 1;
+  transition: 0.1s;
+  color: white;
+  box-shadow: inset 0 -8px rgb(245, 27, 49);
+  background-color: rgb(254, 32, 32);
 }
+
+.first-section-second-button {
+  box-shadow: inset 0 -6px 0px rgb(4, 53, 122);
+  border: 1px solid rgb(4, 53, 122);
+}
+
+.first-section-second-button:active {
+  /*avoiding hover beacause of mobile layout*/
+  position: absolute;
+  top: 9px;
+  opacity: 1;
+  transition: 0.1s;
+  color: white;
+  box-shadow: inset 0 -8px rgb(4, 53, 122);
+  background-color: rgb(4, 53, 122);
+}
+
+
+
 
 #second-section-who-we-are {
   margin: 20px auto;
@@ -96,11 +139,21 @@ main {
   margin-bottom: 11px;
 }
 
+#second-section-content p:first-child::first-letter {
+  font-size: 2.9rem;
+  color: rgb(255, 3, 3);
+  font-weight: 500;
+}
+
 #second-section-image {
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 100%;
+  border: 1px inset black;
 }
+
+
+
 
 #third-section-our-partner-schools {
   margin: 40px auto;
@@ -170,22 +223,70 @@ main {
 @media (min-width: 768px) {
   /*----------First-section-button-container--------*/
 
+  #first-section-logo-button {
+    height: 30vh;
+    min-height: 307px;
+    max-height: 320px;
+  }
+
   #first-section-button-container {
+    margin-top: 13px;
     flex-direction: row;
-    width: 57%;
+    width: 60%;
+    max-width: 480px;
+    height: 75px;
     /* background-color: black; */
   }
 
-  .first-section-button {
-    height: 65px;
-    font-size: 1.5rem;
-    cursor: pointer;
+  .first-section-button-links-container {
+    margin-right: 5px;
   }
 
-  .first-section-button:active {
+  .first-section-first-button,
+  .first-section-second-button {
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 405;
+  }
+
+  .first-section-first-button:hover {
     opacity: 1;
-    background-color: white;
-    font-size: 1.7rem;
+    border: 2px solid rgb(245, 27, 49);
+    font-size: 1.49rem;
+  }
+
+  .first-section-second-button:hover {
+    opacity: 1;
+    border: 2px solid rgb(4, 53, 122);
+    font-size: 1.49rem; 
+  }
+
+  /* ------Second-section-who-are-we?---------- */
+
+  #second-section-who-we-are {
+    width: 90%;
+  }
+
+  #second-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(124, 31, 201); */
+  }
+
+  #paragraphs {
+    width: 54%;
+    text-align: justify;
+    line-height: 1.25;
+    /* background-color: aqua; */
+  }
+
+  #second-section-image-container {
+    width: 42%;
+  }
+
+  #second-section-image {
+    margin-top: 0;
   }
 
   /* ------Third-section-partner-schools---------- */
@@ -254,23 +355,28 @@ main {
   /* ------first-section------- */
 
   #first-section-logo-button {
-    width: 85%;
-    height: 65vh;
-    border-radius: 25px;
+    width: 95%;
+    height: 75vh;
+    max-height: 600px;
+    border-radius: 20px;
   }
 
   #first-section-logo-container {
     height: 150px;
   }
 
-  .first-section-button {
-    height: 75px;
+  .first-section-first-button {
+
+  }
+
+  .first-section-second-button {
+
   }
 
   /* ----Second section----- */
 
   #second-section-who-we-are {
-    margin-top: 60px;
+    margin-top: 30px;
     align-items: center;
   }
 
@@ -283,11 +389,8 @@ main {
   }
 
   #paragraphs {
-    /* flex: 1; */
     width: 65%;
     padding: 10px;
-    /* max-width: 430px; */
-    /* height: 100%; */
   }
 
   #second-section-image-container {
@@ -297,7 +400,7 @@ main {
 
   #second-section-image {
     border-radius: 15px;
-    margin: 0;
+    margin: 14px;
   }
 
   /*---------third-section-------- */
