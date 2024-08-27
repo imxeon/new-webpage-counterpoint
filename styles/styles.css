@@ -6,15 +6,18 @@
 
 body {
   margin: 0;
+  /* background-color: rgb(224, 252, 247); */
 }
 
-/* --------HEADER------------- */
-
-header {
+header, main, footer {
   max-width: 1800px;
   min-width: 320px;
   margin: auto;
 }
+
+
+/* --------HEADER & FOOTER------------- */
+/* -------------HEADER------------ */
 
 #header-logo {
   width: 80%;
@@ -24,13 +27,68 @@ header {
   display: none;
 }
 
-/* -------------MAIN START---------------- */
+/* Footer */
 
-main {
-  max-width: 1800px;
-  min-width: 320px;
-  margin: auto;
+footer {
+  margin: 150px auto 0 auto;
+  background-color: rgb(4, 53, 122);
+  color: rgb(208, 236, 246);
+  border-radius: 20px 20px 0 0;
 }
+
+#footer-content {
+  padding-top: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+#footer-section-heading {
+  font-size: 1.3rem;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+#address-content {
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+#footer-logo-and-social-accounts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer-logo {
+  width: 150px;
+}
+
+#social-accounts {
+  display: flex;
+  gap: 12px;
+}
+
+#footer-social-links-anchor {
+  color: rgb(208, 236, 246);
+}
+
+#copyright {
+  width: 90%;
+  margin: auto;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+
+/*----------Mobile screen responsive------*/
 
 #first-section-logo-button {
   display: flex;
@@ -97,7 +155,7 @@ main {
 }
 
 .first-section-first-button:active {
-  /*avoiding hover beacause of mobile layout*/
+  /*avoiding hover beacuse of mobile layout*/
   position: absolute;
   top: 9px;
   opacity: 1;
@@ -217,206 +275,4 @@ main {
 
 .team-member-name {
   font-size: 1.5rem;
-}
-
-/* screen wider than 767px (tablet) */
-@media (min-width: 768px) {
-  /*----------First-section-button-container--------*/
-
-  #first-section-logo-button {
-    height: 30vh;
-    min-height: 307px;
-    max-height: 320px;
-  }
-
-  #first-section-button-container {
-    margin-top: 13px;
-    flex-direction: row;
-    width: 60%;
-    max-width: 480px;
-    height: 75px;
-    /* background-color: black; */
-  }
-
-  .first-section-button-links-container {
-    margin-right: 5px;
-  }
-
-  .first-section-first-button,
-  .first-section-second-button {
-    height: 100%;
-    font-size: 1.5rem;
-    font-weight: 405;
-  }
-
-  .first-section-first-button:hover {
-    opacity: 1;
-    border: 2px solid rgb(245, 27, 49);
-    font-size: 1.49rem;
-  }
-
-  .first-section-second-button:hover {
-    opacity: 1;
-    border: 2px solid rgb(4, 53, 122);
-    font-size: 1.49rem; 
-  }
-
-  /* ------Second-section-who-are-we?---------- */
-
-  #second-section-who-we-are {
-    width: 90%;
-  }
-
-  #second-section-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: rgb(124, 31, 201); */
-  }
-
-  #paragraphs {
-    width: 54%;
-    text-align: justify;
-    line-height: 1.25;
-    /* background-color: aqua; */
-  }
-
-  #second-section-image-container {
-    width: 42%;
-  }
-
-  #second-section-image {
-    margin-top: 0;
-  }
-
-  /* ------Third-section-partner-schools---------- */
-
-  #third-section-our-partner-schools {
-    margin-top: 100px;
-  }
-
-  #carousel {
-    /* background-color: bisque; */
-    width: 90%;
-    padding-left: 50px;
-    margin: auto;
-  }
-
-  /* ---------Fourth-section-our-team---------- */
-
-  #fourth-section-team-members {
-    margin-top: 100px;
-  }
-
-  #team-members-container {
-    width: 85%;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* background-color: aquamarine; */
-  }
-
-  .team-member-profile {
-    width: 47%;
-  }
-}
-
-/*----------Laptop screen 1024px------*/
-
-@media (min-width: 1024px) {
-  /* ---------header / navbar */
-
-  #navbar-mobile-tablet {
-    display: none;
-  }
-
-  #navbar-desktop {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    width: 80%;
-    height: 80px;
-  }
-
-  #nav-links {
-    width: 35%;
-    max-width: 300px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #nav-links a {
-    text-decoration: none;
-    color: black;
-  }
-
-  /* ------first-section------- */
-
-  #first-section-logo-button {
-    width: 95%;
-    height: 75vh;
-    max-height: 600px;
-    border-radius: 20px;
-  }
-
-  #first-section-logo-container {
-    height: 150px;
-  }
-
-  .first-section-first-button {
-
-  }
-
-  .first-section-second-button {
-
-  }
-
-  /* ----Second section----- */
-
-  #second-section-who-we-are {
-    margin-top: 30px;
-    align-items: center;
-  }
-
-  #second-section-content {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    text-align: justify;
-    max-width: 1040px;
-  }
-
-  #paragraphs {
-    width: 65%;
-    padding: 10px;
-  }
-
-  #second-section-image-container {
-    flex: 1;
-    max-width: 430px;
-  }
-
-  #second-section-image {
-    border-radius: 15px;
-    margin: 14px;
-  }
-
-  /*---------third-section-------- */
-
-  #carousel {
-    width: 100%;
-    margin: 0;
-    /* background-color: aquamarine; */
-  }
-
-  /* bootstrap carousel */
-
-  .carousel-item-image {
-    width: 20%;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-  }
 }
