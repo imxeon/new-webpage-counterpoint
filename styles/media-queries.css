@@ -1,223 +1,39 @@
-
-/* screen wider than 767px (tablet) */
 @media (min-width: 768px) {
-    /*----------First-section-button-container--------*/
-  
-    #first-section-logo-button {
-      height: 30vh;
-      min-height: 307px;
-      max-height: 320px;
-    }
-  
-    #first-section-button-container {
-      margin-top: 13px;
-      flex-direction: row;
-      width: 60%;
-      max-width: 480px;
-      height: 75px;
-      /* background-color: black; */
-    }
-  
-    .first-section-button-links-container {
-      margin-right: 5px;
-    }
-  
-    .first-section-first-button,
-    .first-section-second-button {
-      height: 100%;
-      font-size: 1.5rem;
-      font-weight: 405;
-    }
-  
-    .first-section-first-button:hover {
-      opacity: 1;
-      border: 2px solid rgb(245, 27, 49);
-      font-size: 1.49rem;
-    }
-  
-    .first-section-second-button:hover {
-      opacity: 1;
-      border: 2px solid rgb(4, 53, 122);
-      font-size: 1.49rem; 
-    }
-  
-    /* ------Second-section-who-are-we?---------- */
-  
-    #second-section-who-we-are {
-      width: 90%;
-    }
-  
-    #second-section-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      /* background-color: rgb(124, 31, 201); */
-    }
-  
-    #paragraphs {
-      width: 54%;
-      text-align: justify;
-      line-height: 1.25;
-      /* background-color: aqua; */
-    }
-  
-    #second-section-image-container {
-      width: 42%;
-    }
-  
-    #second-section-image {
-      margin-top: 0;
-    }
-  
-    /* ------Third-section-partner-schools---------- */
-  
-    #third-section-our-partner-schools {
-      margin-top: 100px;
-    }
-  
-    #carousel {
-      /* background-color: bisque; */
-      width: 90%;
-      padding-left: 50px;
-      margin: auto;
-    }
-  
-    /* ---------Fourth-section-our-team---------- */
-  
-    #fourth-section-team-members {
-      margin-top: 100px;
-    }
-  
+
+    #c-first-section-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        /* justify-content: center; */
+      }
+      
+      #c-first-section-paragraphs {
+        width: 50%;
+      }
+
+      #c-first-section-image-container {
+        width: 40%;
+      }
+
+      #c-first-section-image-container img {
+        height: 470px;
+      }
+    
+    
+    
+    /* second section team */
     #team-members-container {
-      width: 85%;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      /* background-color: aquamarine; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        gap: 0px;
+        column-gap: 40px;
+        row-gap: 40px;
     }
-  
+
     .team-member-profile {
-      width: 47%;
+        max-width: 380px;
+
     }
-  }
-  
-  /* ----------Footer section (min-width: 950px)------------- */
-  @media (min-width: 950px) {
-  
-    #footer-content {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    address {
-      width: 70%;
-    }
-  
-    #footer-logo-and-social-accounts {
-      /* background-color: red; */
-      flex-direction: column;
-      justify-content: space-evenly;
-    }
-  
-  }
-  
-  /*----------Laptop screen 1024px---------*/
-  
-  @media (min-width: 1024px) {
-    /* ---------header / navbar */
-  
-    #navbar-mobile-tablet {
-      display: none;
-    }
-  
-    #navbar-desktop {
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-      width: 80%;
-      height: 80px;
-    }
-  
-    #nav-links {
-      width: 35%;
-      max-width: 300px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    #nav-links a {
-      text-decoration: none;
-      color: black;
-    }
-  
-    /* ------first-section------- */
-  
-    #first-section-logo-button {
-      width: 95%;
-      height: 75vh;
-      max-height: 600px;
-      border-radius: 20px;
-    }
-  
-    #first-section-logo-container {
-      height: 150px;
-    }
-  
-    .first-section-first-button {
-  
-    }
-  
-    .first-section-second-button {
-  
-    }
-  
-    /* ----Second section----- */
-  
-    #second-section-who-we-are {
-      margin-top: 30px;
-      align-items: center;
-    }
-  
-    #second-section-content {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      text-align: justify;
-      max-width: 1040px;
-    }
-  
-    #paragraphs {
-      width: 65%;
-      padding: 10px;
-    }
-  
-    #second-section-image-container {
-      flex: 1;
-      max-width: 430px;
-    }
-  
-    #second-section-image {
-      border-radius: 15px;
-      margin: 14px;
-    }
-  
-    /*---------third-section-------- */
-  
-    #carousel {
-      width: 100%;
-      margin: 0;
-      /* background-color: aquamarine; */
-    }
-  
-    /* bootstrap carousel */
-  
-    .carousel-item-image {
-      width: 20%;
-      border: 1px solid black;
-      border-radius: 10px;
-      margin: 0 15px 15px 0;
-    }
-  }
-  
+}
