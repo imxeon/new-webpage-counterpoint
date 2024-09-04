@@ -1,0 +1,90 @@
+/* Tabs */
+
+@media (min-width: 900px) {
+
+    main {
+        margin-bottom: 7rem;
+    }
+
+    #hero-section {
+        margin: 0 auto 0 auto;
+        width: 55%;
+        max-width: 1000px;
+        /* background-color: bisque; */
+      }
+
+    #attribution {
+        font-size: 0.8vw;
+    }
+
+    h1 {
+        margin: 1.3rem 0 0 0;
+    }
+
+    h4 {
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    #school-services-section {
+        max-width: 1400px;
+    }
+
+    #school-services-note {
+        margin-top: 0.3rem;
+        margin-bottom: 2.3rem;
+    }
+
+    #school-service-image {
+        object-fit: cover;
+        object-position: 73%;
+    }
+
+    #school-services-content-container {
+        flex-direction: row;
+    }
+
+    /* #school-services-content-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    } */
+    
+    #counterpoint-threesixty-club, #school-debate-club,
+    #enrichment-camp, #wsc-training {
+        max-width: 1400px;
+    }
+
+    .service-image-content-container {
+        margin: 2rem 0 0 0;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: start; */
+    }
+
+    .section-image-container {
+        width: 30%;
+        margin: 0rem auto 1rem auto;
+      }
+
+    #school-debate-club img{
+        object-position: 54%;
+    }
+
+    #wsc-training img {
+        object-position: 55%;
+    }
+
+    .section-images {
+      height: 100%;
+      object-fit: cover;
+      object-position: 1%;
+      border-radius: 12px;
+      }
+
+    .service-content-container {
+        width: 65%;
+    }
+
+
+}
+

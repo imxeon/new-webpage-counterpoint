@@ -7,6 +7,7 @@ body {
   font-size: 1rem;
   margin: 0 auto 0 auto;
   max-width: 2000px;
+  min-width: 320px;
   background-color: rgb(230, 243, 247);
   color: rgb(69, 69, 69);
 }
@@ -135,6 +136,13 @@ main {
   width: 90%;
 }
 
+main h1 {
+  text-decoration-color: rgb(53, 165, 165);
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 7px;
+}
+
 #c-first-section-who-we-are {
   margin: auto;
   box-shadow: 0 0px 50px rgb(168, 204, 209);
@@ -245,11 +253,10 @@ main {
     box-sizing: content-box;
     max-width: 350px;
     background-color: rgb(242, 247, 250);
-    /* border: 1px dashed rgb(75, 51, 153); */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 0 6px rgb(163, 212, 224);
-    /* padding: 15px 0 15px 0; */
+    /* border: 1px solid rgb(234, 129, 129); */
     /* background-color: brown; */
   }
   
@@ -264,6 +271,23 @@ main {
     margin-top: 1rem;
     font-weight: 500;
     font-size: 1.4rem;
+    text-decoration-color: rgb(53, 165, 165);
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 7px;
+  }
+
+  .red-text-underline {
+    text-decoration-color: rgb(234, 129, 129);
+  }
+  .blue-text-underline {
+    text-decoration-color: rgb(7, 173, 206);
+  }
+  .yellow-text-underline {
+    text-decoration-color: rgb(226, 232, 36);
+  }
+  .light-blue-text-underline {
+    text-decoration-color: rgb(109, 224, 247);
   }
   
   .team-member-role {
