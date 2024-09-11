@@ -41,3 +41,101 @@
         width: 80%;
       }
 }
+
+/* Footer media queries*/
+
+@media (min-width: 768px) {
+    footer {
+        padding: 0 25px 0 25px;
+        font-size: 1rem;
+      }
+    
+      #c-footer-section-heading {
+        font-size: 1.7rem;
+        margin-left: 16px;
+        /* margin-bottom: 5rem; */
+      }
+    
+      #google-maps-embed {
+        height: 95px;
+      }
+      
+      #c-footer-logo {
+        width: 180px;
+      }
+    
+      #footer-logo-and-social-accounts {
+        /* background-color: aqua; */
+        width: 80%;
+        margin: 30px auto;
+        justify-content: space-between;
+      }
+}
+
+@media (min-width: 1024px) {
+    #c-footer-section-heading {
+        margin-left: 0;
+      }
+    
+      address {
+        justify-content: space-between;
+      }
+    
+      #address-text {
+        width: 45%;
+      }
+    
+      #embedded_pages {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        max-width: 515px;
+      }
+    
+      #facebook-page-embed {
+        display: block;
+        width: 65%;
+      }
+    
+      #google-maps-embed {
+        width: 30%;
+        height: 130px;
+      }
+}
+
+@media (min-width: 1200px) {
+
+    address {
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+      }
+    
+      #c-footer-section-heading {
+        font-size: 2rem;
+        margin-left: 70px;
+      }
+    
+      #address-text {
+        width: 45%;
+      }
+    
+      #embedded_pages {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        max-width: 615px;
+        /* background-color: coral; */
+      }
+    
+      #facebook-page-embed {
+        display: block;
+        width: 65%;
+      }
+    
+      #google-maps-embed {
+        width: 45%;
+        height: 130px;
+      }
+
+}

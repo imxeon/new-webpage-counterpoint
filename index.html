@@ -14,6 +14,15 @@
     <!-- Bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- animate.style CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS scroll library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +38,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-xl" style="background-color: rgb(214, 236, 244);">
+      <nav class="navbar navbar-expand-xl">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
@@ -52,15 +61,15 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#first-section-who-we-are">
-                  Who we are?
+                <a class="nav-link active" aria-current="page" href="./index.html">
+                  Home
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="teams.html">Teams</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#c-second-section-our-partners">Our Partners</a>
+                <a class="nav-link" href="#c-section-our-partners">Our Partners</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -78,10 +87,10 @@
         <img class="w-100" src="./images/slider-logo.png" alt="counterpoint-hero-logo">
         <div id="c-button-group">
           <a href="#">
-            <button id="c-hero-student-button">STUDENT ZONE</button>
+            <button class="animate__animated animate__tada animate__delay-1s" id="c-hero-student-button">STUDENT ZONE</button>
           </a>
           <a href="school-services.html">
-            <button id="c-hero-school-button" title="School services">SCHOOL ZONE</button>
+            <button class="animate__animated animate__tada animate__delay-2s"id="c-hero-school-button" title="School services">SCHOOL ZONE</button>
           </a>
         </div>
       </div>
@@ -92,7 +101,7 @@
           <div class="carousel-item active position-relative">
             <img class="c-hero-carousel-images" src="./images/team-bg.jpg" alt="...">
             <div class="carousel-caption position-absolute" id="c-first-caption">
-              <h1>COUNTERPOINT EDU LABS</h1>
+              <h1 class="animate__animated animate__fadeInDown" class="fs-3">COUNTERPOINT EDU LABS</h1>
             </div>
           </div>
           <div class="carousel-item">
@@ -122,12 +131,18 @@
     </div>
 
       <main>
-        <section id="c-first-section-who-we-are">
+        <section 
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        
+        id="c-first-section-who-we-are">
           <h1>Who we are?</h1>
           <div id="c-first-section-content">
               <div id="c-first-section-paragraphs">
                 <p>
-                  <span style="font-size: 2.5rem; font-weight: 500;">w</span>e are an education company working to promote collaboration,
+                  We are an education company working to promote collaboration,
                   creativity, critical analysis and interdisciplinary thinking
                   through extra-curricular programs, school curriculum-building and
                   enrichment camps across India.
@@ -153,18 +168,24 @@
           </div>
         </section>
 
-        <section id="c-third-section-team-members">
+        <section 
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        
+        id="c-section-team-members">
           <h1>Our Team</h1>
           <div id="team-members-container">
+
             <div class="team-member-profile">
               <img class="team-member-image" src="./images/team/Rita Singh.jpg" alt="" />
               <div class="team-member-name red-text-underline">Rita Singh</div>
               <!-- <div class="team-member-role">Head Coach</div> -->
               <div class="team-member-information">
                 Rita Singh graciously serves as our Director, apart from juggling roles of CEO and Director at a major group of educational institutions. We are proud to have a National Awardee of CBSE Teachers Award 2019 in the Principal Category with us. She has been a Master Trainer/Mentor with CBSE for 'Continuous and Comprehensive Evaluation' earlier and now for 'School Quality Assessment and Assurance' Framework, training over 600 principals. 
-                <a href="teams.html#rita-singh" class="btn-primary">Learn more</a>
-              </div>
-              
+                <a href="teams.html#rita-singh" class="btn-primary d-block">Learn more</a>
+              </div> 
             </div>
   
             <div class="team-member-profile">
@@ -173,7 +194,7 @@
               <!-- <div class="team-member-role">Head Coach</div> -->
                <div class="team-member-information">
                 Salil Singh is an internationally acclaimed debate coach and academic trainer who has trained debate teams from six countries and over six hundred schools in India. Having been an active member of the college debate circuit in his day, he has gone on to forge a career in the field, with the ultimate objective of making the joys of logic, reasoning and public speaking known to students and schools who would find such exposure hard to come by.
-                <a href="teams.html#salil-singh" class="btn-primary">Learn more</a>
+                <a href="teams.html#salil-singh" class="btn-primary d-block">Learn more</a>
                </div>
             </div>
   
@@ -183,52 +204,160 @@
               <!-- <div class="team-member-role">Head Coach</div> -->
               <div class="team-member-information">
                 Naimish Tripathi is an advocate, writer and a creative director. Having graduated from Jamia Millia Islamia in law, he has been active in the Indian debate circuit for over 10 years, right since his school days. He works as the Content & Training Head for Behes which is India’s biggest debate platform for school students and has trained and conducted debating tournaments for students from over 1200 schools across more than 42 cities in India and five other countries. 
-                <a href="teams.html#naimish-tripathi" class="btn-primary">Learn more</a>
+                <a href="teams.html#naimish-tripathi" class="btn-primary d-block">Learn more</a>
               </div>
             </div>
   
             <div class="team-member-profile">
-              <img class="team-member-image" src="./images/team/salil-singh-old.png" alt="" />
+              <img class="team-member-image" src="./images/team/Shivani-Pathak.jpg" alt="" />
               <div class="team-member-name light-blue-text-underline">Shivani Pathak</div>
               <!-- <div class="team-member-role">Head Coach</div> -->
               <div class="team-member-information">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus similique necessitatibus incidunt sequi, eligendi non illo nam. Atque, aspernatur vitae explicabo corporis laborum quaerat eaque incidunt aliquam cumque nemo?
-                <a href="teams.html#shivani-pathak" class="btn-primary">Learn more</a>
+                Shivani is an educator, having contributed to education in several different capacities.
+                As a part for Janaagraha, centre for citizenship and democracy, she has worked closely with district administrations to run programmes to incorporate active citizenship in school curricula.
+                She has also created several digital self learning courses in civic education aimed at youth for capacity building with emphasis on building 21st century skills with capacity building commission of India.
+                <a href="teams.html#shivani-pathak" class="btn-primary d-block">Learn more</a>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="c-second-section-our-partners">
+        <section 
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="150"
+        data-aos-duration="600"
+        
+        id="c-section-our-partners">
           <h1 class="text-center">Partner Schools</h1>
           <div id="partner-schools-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-theme="dark">
 
             <!-- The slideshow/carousel -->
             <div id="carousel-inner" class="carousel-inner">
+
               <div id="#carousel-item" class="carousel-item active">
                 <img
-                  src="./images/schools/ahlcon-international-school-delhi.jpg"
+                  src="./images/schools/ministry-of-defence-india.png"
                   class="carousel-item-image"
+                />
+                <img
+                  src="./images/schools/confederation-of-indian-industry.png"
+                  class="carousel-item-image"
+                  title="Confederation of Indian Industry"
+                />
+                <img
+                  src="./images/schools/jaanagraha.png"
+                  class="carousel-item-image"
+                />
+                <img
+                  src="./images/schools/access-india.png"
+                  class="carousel-item-image"
+                />
+                <img
+                src="./images/schools/diksha-foundation.png"
+                class="carousel-item-image"
+                title="Diksha Foundation"
+                />
+                <img
+                  src="./images/schools/pathways-gurgaon.jpg"
+                  class="carousel-item-image"
+                />
+              </div>
+
+              <div id="#carousel-item" class="carousel-item">
+                <img
+                  src="./images/schools/dalimss-sunbeam.png"
+                  class="carousel-item-image"
+                  title="Dalimss Sunbeam School, Varanasi"
+                />
+                <img
+                  src="./images/schools/sunbeam-school.png"
+                  class="carousel-item-image"
+                  title="Sunbeam School"
+                />
+                <img
+                  src="./images/schools/aps-udhampur.jpeg"
+                  class="carousel-item-image"
+                  title="Army Public Sschool, Udhampur"
+                />
+                <img
+                  src="./images/schools/aps-bb-cantt-srinagar.png"
+                  class="carousel-item-image"
+                  title="Army Public School, BB Cantt Srinagar"
+                />
+                <img
+                src="./images/schools/army-goodwill-school-phalgam.png"
+                class="carousel-item-image"
+                title="Army Goodwill School Phalgam"
+                />
+                <img
+                  src="./images/schools/gear-innovative-banglore.png"
+                  class="carousel-item-image"
+                />
+              </div>
+
+              <div id="#carousel-item" class="carousel-item">
+                <img
+                  src="./images/schools/laurel-global-school.png.png"
+                  class="carousel-item-image"
+                  title="Laurel Global School"
+                />
+                <img
+                  src="./images/schools/venkateshwar-school-raipur.png"
+                  class="carousel-item-image"
+                  title="Venkateshwar School, Raipur"
+                />
+                <img
+                  src="./images/schools/sachdeva global school, pitampura.png"
+                  class="carousel-item-image"
+                  title="Sachdeva Global School, Pitampura"
+                />
+                <img
+                  src="./images/schools/itl-public-school.png.png"
+                  class="carousel-item-image"
+                  title="ITL Public School"
+                />
+                <img
+                src="./images/schools/delhi-public-school-guwhati.png.png"
+                class="carousel-item-image"
+                title="Delhi Public School, Guwhati"
+                />
+                <img
+                  src="./images/schools/satykaam-international-school-meerut.png.png"
+                  class="carousel-item-image"
+                />
+              </div>
+
+              <div id="#carousel-item" class="carousel-item">
+                <img
+                  src="./images/schools/gajera-global-school.png"
+                  class="carousel-item-image"
+                  title=""
                 />
                 <img
                   src="./images/schools/akca.jpg"
                   class="carousel-item-image"
+                  title="A.K Children Academy"
                 />
                 <img
                   src="./images/schools/apl-global-school.jpg"
                   class="carousel-item-image"
+                  title="APL Global School"
                 />
                 <img
                   src="./images/schools/aps-noida.jpg"
                   class="carousel-item-image"
+                  title="Army Public School, Noida"
                 />
                 <img
                 src="./images/schools/dps-international-saket.jpg"
                 class="carousel-item-image"
+                title="Delhi Public School International, Saket"
                 />
                 <img
                   src="./images/schools/dps-rn.jpg"
                   class="carousel-item-image"
+                  title="Delhi Public School, Rajnagar"
                 />
               </div>
         
@@ -236,10 +365,12 @@
                 <img
                   src="./images/schools/gd.jpg"
                   class="carousel-item-image"
+                  title="GD Goenka School, Indore"
                 />
                 <img
                   src="./images/schools/hayde-heritage.jpg"
                   class="carousel-item-image"
+                  title="Hayde Heritage School, Kotdwara"
                 />
                 <img
                   src="./images/schools/heritage-agra.jpg"
@@ -248,15 +379,18 @@
                 <img
                   src="./images/schools/heritage-vasant-kunj.jpg"
                   class="carousel-item-image"
+                  title="Heritage Vasant Kunj"
                 />
                 <img
                 src="./images/schools/indirapuram-public-school.jpg"
                 class="carousel-item-image"
+                title="Indirapuram Public School"
                 />
                 <img
                   src="./images/schools/jm-int.jpg"
-                  alt="ahlcon-international-school-delhi"
+                  alt="JM-international-school"
                   class="carousel-item-image"
+                  title="JM International School"
                 />
               </div>
                       
@@ -264,27 +398,33 @@
                 <img
                   src="./images/schools/kaushalya-world-school.jpg"
                   class="carousel-item-image"
+                  title="Kaushalaya World School"
                 />
                 <img
                   src="./images/schools/learning-path.jpg"
                   class="carousel-item-image"
+                  title="Learning Paths School"
                 />
                 <img
                   src="./images/schools/maxfort.jpg"
                   class="carousel-item-image"
+                  title="Maxfort School, Dwarka, New Delhi"
                 />
                 <img
                   src="./images/schools/meerut-public-school.jpg"
                   class="carousel-item-image"
+                  title="Meerut Public School"
                 />
                 <img
                 src="./images/schools/mg-world-vision.jpg"
                 class="carousel-item-image"
+                title="MG World Vision School"
                 />
                 <img
                   src="./images/schools/pathways-gurgaon.jpg"
                   alt="..."
                   class="carousel-item-image"
+                  title="Pathways World School, Gurgaon, Aravali"
                 />
               </div>
 
@@ -293,6 +433,7 @@
                 <img
                   src="./images/schools/pathways-noida.jpg"
                   class="carousel-item-image"
+                  title="Pathways Noida School"
                 />
                 <img
                   src="./images/schools/presidium.jpg"
@@ -301,10 +442,12 @@
                 <img
                   src="./images/schools/queens-valley-school-dwarka-delhi.jpg"
                   class="carousel-item-image"
+                  title="Queens Valley School, Dwarka, Delhi"
                 />
                 <img
                   src="./images/schools/radiant.jpg"
                   class="carousel-item-image"
+                  title="Radiant International School"
                 />
                 <img
                 src="./images/schools/sarvottam-international-school-greater-Noida.jpg"
@@ -317,21 +460,38 @@
                 />
               </div>
 
-                      
-              <div class="carousel-item" id="#carousel-item">
+              <div id="#carousel-item" class="carousel-item">
+                <img
+                  src="./images/schools/ahlcon-international-school-delhi.jpg"
+                  class="carousel-item-image"
+                  title="Ahlcon International School"
+                />
                 <img
                   src="./images/schools/shiv-nadar-school-faridabad.jpg"
                   class="carousel-item-image"
+                  title="Shiv Nadar School Faridabad"
                 />
                 <img
                   src="./images/schools/shri-venkateshwar-international-dwarka-delhi.jpg"
                   class="carousel-item-image"
+                  title="Shri Venkateshwar International School, Dwarka, Delhi"
                 />
                 <img
                   src="./images/schools/silver-line.jpg"
                   class="carousel-item-image"
+                  title="Silver Line Prestige School"
                 />
+                <img
+                src="./images/schools/dps-school.jpg"
+                class="carousel-item-image"
+                title="Delhi Public School"
+                />
+                <!-- <img
+                  src="./images/schools/"
+                  class="carousel-item-image"
+                /> -->
               </div>
+
             </div>
         
             <!-- Left and right controls/icons (BUTTONS) --> 
@@ -365,74 +525,78 @@
     <footer>
       <!-- <div id="footer-content"> -->
         <div id="c-footer-contact">
-          <h5 class="my-3" id="c-footer-section-heading">Contact</h5>
+          <h5 id="c-footer-section-heading">Contact</h5>
           <address>
-            <div id="address-content">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-geo-alt-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
-                />
-              </svg>
-              B1002, Sunbreeze Apartments, Sector-5, Vaishali, Ghaziabad, Uttar
-              Pradesh, India
+            <div id="address-text">
+              <div id="address-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                  />
+                </svg>
+                B-83, Sector 49, Noida, Uttar Pradesh, India.
+              </div>
+              <div id="mail-address">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope-at-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                  />
+                  <path
+                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                  />
+                </svg>
+                counterpointedu@gmail.com
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telephone-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                  />
+                </svg>
+                +91 88006 40803, +91 87440 40118
+              </div>  
             </div>
-            <div id="mail-address">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-envelope-at-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-                />
-                <path
-                  d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
-                />
-              </svg>
-              info@counterpointedu.in
+            <div id="embedded_pages">
+                <iframe id="facebook-page-embed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcounterpointedu&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe id="google-maps-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112050.55375207121!2d77.34207260000001!3d28.64235320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce54c2e6f81a5%3A0x5265b5a29a025ad3!2sBehes!5e0!3m2!1sen!2sin!4v1725967813918!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-telephone-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                />
-              </svg>
-              +91 88006 40803, +91 87440 40118
-            </div>
-          </address>
+          </address> 
         </div>
 
-        <div class="mt-3 d-flex justify-content-around align-items-center" id="footer-logo-and-social-accounts">
+        <div id="footer-logo-and-social-accounts">
           <img id="c-footer-logo" src="./images/slider-logo.png" alt="counterpoint-logo">
           <div class="d-flex justify-content-around" id="c-social-accounts-logo-links">
             <div>
               <a
-                id="c-footer-social-links-anchor"
+                class="c-footer-social-links-anchor"
                 href="https://www.facebook.com/counterpointedu/?ref=embed_page"
                 target="_blank"
               >
                 <svg
+                  id="facebook-logo"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
                   fill="currentColor"
                   class="bi bi-facebook"
                   viewBox="0 0 16 16"
@@ -445,14 +609,13 @@
             </div>
             <div>
               <a
-                id="c-footer-social-links-anchor"
+                class="c-footer-social-links-anchor"
                 href="https://www.instagram.com/counterpointedu/"
                 target="_blank"
               >
                 <svg
+                  id="instagram-logo"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
                   fill="currentColor"
                   class="bi bi-instagram"
                   viewBox="0 0 16 16"
@@ -471,5 +634,13 @@
         © 2024 All Rights Reserved by Counterpoint Edu Labs.
       </div>
     </footer>
+
+    <!-- ANIMATE ON SCROLL LIBRARY-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialising AOS library-->
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

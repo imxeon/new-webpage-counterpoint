@@ -26,13 +26,10 @@
         text-align: left;
     }
 
-    #school-services-section {
-        max-width: 1400px;
-    }
-
     #school-services-note {
         margin-top: 0.3rem;
         margin-bottom: 2.3rem;
+        font-size: 0.9rem;
     }
 
     #school-service-image {
@@ -41,15 +38,35 @@
     }
 
     #school-services-content-container {
-        flex-direction: row;
-    }
-
-    /* #school-services-content-container {
+        width: 100%;
+        max-width: 950px;
         flex-direction: row;
         justify-content: space-evenly;
-    } */
+        margin: 2rem auto 0 auto;
+    }
+
+    #school-services-content-container a {
+        font-size: 1.3rem;
+    }
     
-    #counterpoint-threesixty-club, #school-debate-club,
+    #school-services-content-container a:hover {
+        font-size: 1.5rem;
+        color: rgb(66, 66, 66);
+        background-color: rgb(210, 247, 246);
+    }
+
+    .service-content-container {
+        width: 66%;
+        /* background-color: aqua; */
+    }
+
+    .service-content-container a {
+        margin: 1.6rem 0 0 2.5rem;
+        font-size: 1.4rem;
+        font-weight: 550;
+    }
+    
+    #school-services-section, #counterpoint-threesixty-club, #school-debate-club,
     #enrichment-camp, #wsc-training {
         max-width: 1400px;
     }
@@ -80,11 +97,103 @@
       object-position: 1%;
       border-radius: 12px;
       }
+}
 
-    .service-content-container {
+/* Footer media queries*/
+
+@media (min-width: 768px) {
+    footer {
+        padding: 0 25px 0 25px;
+        font-size: 1rem;
+      }
+    
+      #c-footer-section-heading {
+        font-size: 1.7rem;
+        margin-left: 16px;
+        /* margin-bottom: 5rem; */
+      }
+    
+      #google-maps-embed {
+        height: 95px;
+      }
+      
+      #c-footer-logo {
+        width: 180px;
+      }
+    
+      #footer-logo-and-social-accounts {
+        /* background-color: aqua; */
+        width: 80%;
+        margin: 30px auto;
+        justify-content: space-between;
+      }
+}
+
+@media (min-width: 1024px) {
+    #c-footer-section-heading {
+        margin-left: 0;
+      }
+    
+      address {
+        justify-content: space-between;
+      }
+    
+      #address-text {
+        width: 45%;
+      }
+    
+      #embedded_pages {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        max-width: 515px;
+      }
+    
+      #facebook-page-embed {
+        display: block;
         width: 65%;
-    }
+      }
+    
+      #google-maps-embed {
+        width: 30%;
+        height: 130px;
+      }
+}
 
+@media (min-width: 1200px) {
+
+    address {
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+      }
+    
+      #c-footer-section-heading {
+        font-size: 2rem;
+        margin-left: 70px;
+      }
+    
+      #address-text {
+        width: 45%;
+      }
+    
+      #embedded_pages {
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+        max-width: 615px;
+        /* background-color: coral; */
+      }
+    
+      #facebook-page-embed {
+        display: block;
+        width: 65%;
+      }
+    
+      #google-maps-embed {
+        width: 45%;
+        height: 130px;
+      }
 
 }
 

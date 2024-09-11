@@ -14,6 +14,15 @@
     <!-- Bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- animate.style CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS scroll library CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,10 +65,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#c-third-section-team-members">Teams</a>
+                  <a class="nav-link" href="teams.html">Teams</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#c-second-section-our-partners">Our Partners</a>
+                  <a class="nav-link" href="./index.html#c-section-our-partners">Our Partners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -74,36 +86,32 @@
                 <a id="attribution" href="http://www.freepik.com">Designed by pikisuperstar / Freepik</a>
             </div>
         </section>
-        <h1 id="page-title">School Services</h1>
+        <h1 class="animate__animated animate__fadeIn" id="page-title">School Services</h1>
 
-        <section id="school-services-section">
+        <section 
+        data-aos="zoom-in-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="500"
 
-            <h6 id="school-services-note">School and Student products are different*</h6>
+        id="school-services-section">
+
+            <h6 class="animate__animated animate__shakeX animate__delay-5s" id="school-services-note">School and Student products are different*</h6>
             <div id="school-services-content-container">
-              <div class="section-image-container">
-                <img id="school-service-image" class="section-images" src="./images/community-projects.jpg" alt="">
-              </div>
-              <div class="service-content-container">
-                <a href="#counterpoint-threesixty-club">1.Counterpoint 360 Club</a>
-                <ul>
-                  <li>Could be online/offline.</li>
-                  <li>Any local community can host (customizable).</li>
-                  <li>All are eligible.</li>
-                </ul>
-                <a href="#school-debate-club">2.School Debate Club</a>
-                <ul>
-                    <li>Only schools to join and contact.</li>
-                </ul>
-                <a style="display: block;" href="#enrichment-camp">3.Enrichment camp</a>
-                <a href="#wsc-training">4.WSC Training</a>
-                <ul>
-                    <li>Specialized Training in all academic competitive debating formats such including WSC.</li>
-                </ul>
-              </div>
+                <a href="#counterpoint-threesixty-club">Counterpoint 360 Club</a>
+                <a href="#school-debate-club">School Debate Club</a>
+                <a href="#enrichment-camp">Enrichment camp</a>
+                <a href="#wsc-training">WSC Training</a>
             </div>
         </section>
 
-        <section id="counterpoint-threesixty-club">
+        <section 
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+
+        id="counterpoint-threesixty-club">
+
             <h4>Counterpoint 360&deg; Club</h4>
             <div class="service-image-content-container">
                 <div class="section-image-container">
@@ -116,7 +124,13 @@
             </div>
         </section>
 
-        <section id="school-debate-club">
+        <section 
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+
+        id="school-debate-club">
             <h4>School Debate Club</h4>
             <div class="service-image-content-container">
                 <div class="section-image-container">
@@ -129,7 +143,13 @@
             </div>
         </section>
 
-        <section id="enrichment-camp">
+        <section 
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        
+        id="enrichment-camp">
             <h4>Enrichment Camp</h4>
             <div class="service-image-content-container">
                 <div class="section-image-container">
@@ -143,14 +163,20 @@
             </div>
         </section>
 
-        <section id="wsc-training">
+        <section 
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        
+        id="wsc-training">
             <h4>WSC Training</h4>
             <div class="service-image-content-container">
                 <div class="section-image-container">
                     <img class="section-images" src="./images/scholar-cup.jpg">
                 </div>
                 <div class="service-content-container">
-                    <p>At Behes, we have a longstanding commitment to promoting critical thinking and public speaking within the Indian education sector. Since 2013, we have dedicated ourselves to training students for various editions of the World Scholar’s Cup Championships, helping them achieve extraordinary success.</p>
+                    <p id="intro-para">At Behes, we have a longstanding commitment to promoting critical thinking and public speaking within the Indian education sector. Since 2013, we have dedicated ourselves to training students for various editions of the World Scholar’s Cup Championships, helping them achieve extraordinary success.</p>
                     <h6>Remarkable Milestones</h6>
                     <ul>
                         <li>In 2013, we celebrated our first major success with one of our students being named the Top Debater, securing the fourth individual position and ranking as the 10th best debater at the ToC.</li>
@@ -162,17 +188,6 @@
                     <h6>Our Approach</h6>
                     <p>Our training sessions are meticulously tailored to meet the diverse needs of students, providing them with the necessary tools and skills to excel in competitive environments. By conducting numerous coaching sessions across various schools, we ensure that our students are well-prepared to tackle the challenges of WSC and other prestigious debating competitions such as the ISDS and WSDC amongst others.</p>
                     <p>Behes continues to be a beacon of excellence in debate training, fostering a culture of methodical thinking and effective communication among students. Our legacy of success and commitment to education remains unwavering, as we strive to equip the next generation of debaters with the skills they need to shine on the global stage.</p>
-                    <h6>Additional Notes</h6>
-                    <ul>
-                        <li>Been training students for WSC Global rounds and ToC since 2013</li>
-                        <li>Top debater, fourth individual and 10th best debater at ToC '13</li>
-                        <li>Salil Singh was WSC Coach of the year in 2014.</li>
-                        <li>3 teams out of top 15 debate teams in ToC'14</li>
-                        <li>Overall ninth at ToC '15</li>
-                        <li>Overall 2nd placed team at Globals '16</li>
-                        <li>2016-19 Lost years. Trained delegations from Pathways School Noida and Gurgaon, GD Goenka Sarita Vihar, Heritage School Vasant Kunj,  Presidium Gurgaon, IPS Indirapuram every season and many more.</li>
-                        <li>Post-Covid: Top senior debate team Globals '22 and Top junior debate team Globals '23</li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -182,74 +197,78 @@
       <footer>
         <!-- <div id="footer-content"> -->
           <div id="c-footer-contact">
-            <h5 class="my-3" id="c-footer-section-heading">Contact</h5>
+            <h5 id="c-footer-section-heading">Contact</h5>
             <address>
-              <div id="address-content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-geo-alt-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
-                  />
-                </svg>
-                B1002, Sunbreeze Apartments, Sector-5, Vaishali, Ghaziabad, Uttar
-                Pradesh, India
+              <div id="address-text">
+                <div id="address-content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+                    />
+                  </svg>
+                  B-83, Sector 49, Noida, Uttar Pradesh, India.
+                </div>
+                <div id="mail-address">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-at-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+                    />
+                    <path
+                      d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
+                    />
+                  </svg>
+                  counterpointedu@gmail.com
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+                    />
+                  </svg>
+                  +91 88006 40803, +91 87440 40118
+                </div>  
               </div>
-              <div id="mail-address">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-envelope-at-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-                  />
-                  <path
-                    d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
-                  />
-                </svg>
-                info@counterpointedu.in
+              <div id="embedded_pages">
+                  <iframe id="facebook-page-embed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcounterpointedu&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  <iframe id="google-maps-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112050.55375207121!2d77.34207260000001!3d28.64235320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce54c2e6f81a5%3A0x5265b5a29a025ad3!2sBehes!5e0!3m2!1sen!2sin!4v1725967813918!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-telephone-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                  />
-                </svg>
-                +91 88006 40803, +91 87440 40118
-              </div>
-            </address>
+            </address> 
           </div>
   
-          <div class="mt-3 d-flex justify-content-around align-items-center" id="footer-logo-and-social-accounts">
+          <div id="footer-logo-and-social-accounts">
             <img id="c-footer-logo" src="./images/slider-logo.png" alt="counterpoint-logo">
             <div class="d-flex justify-content-around" id="c-social-accounts-logo-links">
               <div>
                 <a
-                  id="c-footer-social-links-anchor"
+                  class="c-footer-social-links-anchor"
                   href="https://www.facebook.com/counterpointedu/?ref=embed_page"
                   target="_blank"
                 >
                   <svg
+                    id="facebook-logo"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
                     fill="currentColor"
                     class="bi bi-facebook"
                     viewBox="0 0 16 16"
@@ -262,14 +281,13 @@
               </div>
               <div>
                 <a
-                  id="c-footer-social-links-anchor"
+                  class="c-footer-social-links-anchor"
                   href="https://www.instagram.com/counterpointedu/"
                   target="_blank"
                 >
                   <svg
+                    id="instagram-logo"
                     xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
                     fill="currentColor"
                     class="bi bi-instagram"
                     viewBox="0 0 16 16"
@@ -288,3 +306,18 @@
           © 2024 All Rights Reserved by Counterpoint Edu Labs.
         </div>
       </footer>
+  
+
+      <!-- REDUCE MOTION ENABLED NOTICE -->
+      <aside class="motionless__banner">
+        <p>It seems that you have reduce motion enabled!</p>
+      </aside>
+
+
+      <!-- ANIMATE ON SCROLL LIBRARY-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Initialising AOS library-->
+      <script>
+        AOS.init();
+      </script>
+</body>
