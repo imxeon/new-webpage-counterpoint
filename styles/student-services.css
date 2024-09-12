@@ -55,7 +55,7 @@
     text-underline-offset: 5px;
   }
 
-  /* #school-services-section {
+  /* #student-services-section {
     margin: 2.1rem auto 2rem auto;
     width: 90%;
     padding: 16px;
@@ -64,24 +64,14 @@
     box-shadow: 0 0px 50px rgb(168, 204, 209);
   } */
 
-  #school-services-note {
-    text-align: center;
-    margin-top: 0em;
-    font-size: 0.8rem;
-    color: rgb(48, 114, 150);
-    text-decoration: none;
-    /* color: rgb(119, 158, 179); saved for later use */
-    /* text-transform: uppercase; */
-  }
-
-  #school-services-content-container {
-    margin-top: 2rem;
+  #student-services-content-container {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  #school-services-content-container a {
+  #student-services-content-container a {
     display: block;
     margin: 0rem 0 1rem 0.3rem;
     font-weight: 550;
@@ -92,12 +82,12 @@
     transition: border-bottom, font-size 0.4s;
   }
 
-  #school-services-content-container a:hover {
+  #student-services-content-container a:hover {
     border-bottom: 4px solid rgb(21, 108, 105);
     font-size: 1.4rem;
   }
 
-  #school-services-section, #counterpoint-threesixty-club, #school-debate-club,
+  #student-services-section, #counterpoint-threesixty-club, #school-debate-club,
   #enrichment-camp, #wsc-training {
     margin: 2.1rem auto 2rem auto;
     width: 90%;
