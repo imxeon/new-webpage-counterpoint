@@ -156,38 +156,40 @@
 
 @media (min-width: 1200px) {
 
-    address {
-        justify-content: space-between;
-        width: 90%;
-        margin: auto;
-      }
-    
-      #c-footer-section-heading {
-        font-size: 2rem;
-        margin-left: 70px;
-      }
-    
-      #address-text {
-        width: 45%;
-      }
-    
-      #embedded_pages {
-        display: flex;
-        justify-content: space-between;
-        width: 55%;
-        max-width: 615px;
-        /* background-color: coral; */
-      }
-    
-      #facebook-page-embed {
-        display: block;
-        width: 65%;
-      }
-    
-      #google-maps-embed {
-        width: 45%;
-        height: 130px;
-      }
+  /* Footer */
+
+  address {
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+
+  #c-footer-section-heading {
+    font-size: 2rem;
+    margin-left: 70px;
+  }
+
+  #address-text {
+    width: 45%;
+  }
+
+  #embedded_pages {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    max-width: 550px;
+    /* background-color: coral; */
+  }
+
+  #facebook-page-embed {
+    display: block;
+    width: 60%;
+  }
+
+  #google-maps-embed {
+    width: 38%;
+    height: 130px;
+  }
 
 }
 

@@ -164,17 +164,17 @@
     display: flex;
     justify-content: space-between;
     width: 55%;
-    max-width: 615px;
+    max-width: 550px;
     /* background-color: coral; */
   }
 
   #facebook-page-embed {
     display: block;
-    width: 65%;
+    width: 60%;
   }
 
   #google-maps-embed {
-    width: 45%;
+    width: 38%;
     height: 130px;
   }
   
