@@ -1,6 +1,20 @@
 * {
     box-sizing: border-box;
   }
+
+  header li {
+    text-decoration-color: rgb(243, 123, 123);
+    transition: text-decoration 0.3s, text-decoration-color 0.3s,
+    text-decoration-thickness 0.3s, text-underline-offset 0.3s;
+  }
+  
+  header li:hover {
+    /* border-bottom: 3px solid orange; */
+    text-decoration: underline;
+    text-decoration-color: rgb(220, 66, 66);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+  }
   
   body {
     font-family: roboto;
@@ -8,67 +22,47 @@
     margin: 0 auto 0 auto;
     max-width: 2000px;
     min-width: 320px;
-    background-color: rgb(230, 243, 247);
+    background-color: rgb(240, 240, 240);
     color: rgb(69, 69, 69);
   }
-
+  
   main {
     margin: 0rem auto 3rem auto;
-    box-shadow: 0 0px 50px rgb(168, 204, 209);
-    border-radius: 20px;
-    background-color: rgb(214, 236, 244);
     padding-bottom: 2rem;
-    /* width: 97%; */
   }
-
-  #hero-section {
+  
+  #hero-image-container {
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
-    width: 90%;
-    max-width: 1000px;
-    /* background-color: bisque; */
   }
 
-  #hero-image {
-    padding: 1rem 0;
-    width: 80%;
+  #hero-image-container img{
+    height: 230px;
+    object-fit: cover;
+    object-position: 0px -40px;
+    object-position: 0px;
     margin: auto;
     /* background-color: aquamarine; */
   }
-
-  #attribution {
-    display: block;
-    font-size: 0.4rem;
-    text-align: center;
-    color: rgb(11, 137, 148);
-    margin-top: -8px;
-    text-decoration: none;
-  }
-
+  
   h1, h4 {
     text-align: center;
   }
 
   #page-title {
+    margin-top: 20px;
     text-decoration: underline;
-    text-decoration-color: rgb(150, 210, 254);
-    text-decoration-thickness: 5px;
+    text-decoration-color: rgb(243, 123, 123);
+    text-decoration-thickness: 3px;
     text-underline-offset: 5px;
   }
 
-  /* #student-services-section {
-    margin: 2.1rem auto 2rem auto;
-    width: 90%;
-    padding: 16px;
-    background-color: rgb(229, 249, 254);
-    border-radius: 20px;
-    box-shadow: 0 0px 50px rgb(168, 204, 209);
-  } */
-
   #student-services-content-container {
-    margin-top: 1rem;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 10px;
   }
 
   #student-services-content-container a {
@@ -78,12 +72,12 @@
     font-size: 1.2rem;
     color: rgb(86, 80, 80);
     text-decoration: none;
-    border-bottom: 3px solid rgb(123, 215, 212);
+    border-bottom: 3px solid rgb(250, 182, 182);
     transition: border-bottom, font-size 0.4s;
   }
 
   #student-services-content-container a:hover {
-    border-bottom: 4px solid rgb(21, 108, 105);
+    border-bottom: 4px solid rgb(255, 106, 106);
     font-size: 1.4rem;
   }
 
@@ -93,9 +87,9 @@
     width: 90%;
     padding: 25px 15px;
     max-width: 650px;
-    background-color: rgb(229, 249, 254);
+    /* background-color: rgb(229, 249, 254); */
     border-radius: 20px;
-    box-shadow: 0 0px 50px rgb(168, 204, 209);
+    box-shadow: 0 0px 20px rgb(217, 219, 219);
   }
 
   #intro-para {
@@ -114,7 +108,7 @@
   }
 
   h4, h6 {
-    text-decoration-color: rgb(53, 165, 165);
+    text-decoration-color: rgb(248, 118, 118);
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 7px;
@@ -123,7 +117,7 @@
   h6 {
     margin-top: 25px;
     font-size: 1.1rem;
-    text-decoration-color: rgb(53, 165, 165);
+    text-decoration-color: rgb(255, 106, 106);
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
@@ -149,7 +143,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 150px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 0 15px 0 15px;
   background-color: rgb(4, 53, 122);
   color: rgb(208, 236, 246);

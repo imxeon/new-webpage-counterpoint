@@ -1,35 +1,37 @@
 /* Tabs */
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+
+  #hero-image-container img {
+    height: 310px;
+    object-fit: cover;
+    object-position: 0 -100px;
+    object-position: 0;
+    margin: auto;
+    /* background-color: aquamarine; */
+  }
+}
+
+@media (min-width: 945px) {
 
     main {
         margin-bottom: 7rem;
     }
 
-    #hero-section {
-        margin: 0 auto 0 auto;
-        width: 55%;
-        max-width: 1000px;
-        /* background-color: bisque; */
-      }
-
-    #attribution {
-        font-size: 0.8vw;
-    }
 
     h1 {
         margin: 1.3rem 0 0 0;
     }
 
     h4 {
-        margin-left: 40px;
+        margin-left: 25px;
         text-align: left;
     }
 
-    #student-service-image {
+    /* #student-service-image {
         object-fit: cover;
         object-position: 73%;
-    }
+    } */
 
     #student-services-content-container {
         width: 100%;
@@ -40,13 +42,18 @@
     }
 
     #student-services-content-container a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        padding: 6px;
+        border: 2px solid rgb(255, 106, 106);
+        box-shadow: 0px 3px rgb(255, 106, 106);
+        border-radius: 8px;
     }
     
     #student-services-content-container a:hover {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: rgb(66, 66, 66);
-        background-color: rgb(210, 247, 246);
+        box-shadow: 0px 5px 30px rgb(249, 226, 226);
+        background-color: rgb(249, 217, 217);
     }
 
     .service-content-container {
@@ -62,7 +69,7 @@
     
     #student-services-section, #counterpoint-threesixty-club, #school-debate-club,
     #enrichment-camp, #wsc-training {
-        max-width: 1400px;
+        max-width: 1200px;
     }
 
     .service-image-content-container {
@@ -77,12 +84,8 @@
         margin: 0rem auto 1rem auto;
       }
 
-    #student-debate-club img{
-        object-position: 54%;
-    }
-
-    #wsc-training img {
-        object-position: 55%;
+    #school-debate-club img {
+      object-position: 50%;
     }
 
     .section-images {
@@ -91,6 +94,19 @@
       object-position: 1%;
       border-radius: 12px;
       }
+
+    #wsc-training img {
+        object-position: 55%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+  #hero-image-container img{
+    object-position: 0px -161px;
+    height: 420px;
+    border-radius: 20px;
+  }
 }
 
 /* Footer media queries*/

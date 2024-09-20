@@ -1,20 +1,25 @@
+
+
+@media (min-width: 768px) {
+
+  #teams-section {
+    margin-top: 3.2rem
+  }
+}
+
+
 @media (min-width: 800px) {
 
-    #attribution {
-        margin-top: -18px;
-        font-size: 0.8vw;
-    }
-
-    main {
-        margin-bottom: 7rem;
-    }
-
     h1 {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
+    }
+
+    #teams-section {
+      margin-top: 48px;
     }
 
     .team-member-profile {
-        padding-top: 1.8rem;
+        padding: 35px 15px 35px 15px;
         flex-direction: row;
         max-width: 100%;
         justify-content: space-evenly;
@@ -27,6 +32,7 @@
 
     .team-member-image-container {
         width: 30%;
+        max-width: 300px;
     }
 
     .team-member-content {
@@ -40,6 +46,25 @@
     .affiliate-members-container ul li {
         width: 80%;
       }
+}
+
+
+@media (min-width: 1100px) {
+  
+  h1 {
+    font-size: 3.8rem;
+    margin-bottom: 100px;
+    width: 400px;
+  }
+
+  .team-member-content {
+    width: 67%;
+  }
+
+  .team-member-profile, .affiliate-trainers-container {
+    max-width: 1200px;
+  }
+
 }
 
 /* Footer media queries*/

@@ -1,5 +1,8 @@
 @media (min-width: 768px) {
 
+  
+  /* sections */
+
   #c-first-section-who-we-are {
     padding: 32px 22px 10px 22px;
     max-width: 1400px;
@@ -62,6 +65,8 @@
 }
 
 @media (min-width: 1024px) {
+
+  /* sections */
 
   #c-first-section-image-container {
     margin-top: 2.5rem;
