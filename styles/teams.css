@@ -136,7 +136,7 @@
   .affiliate-members-content h2{
     text-align: center;
     margin: 1rem 0 2.5rem 0;
-    text-decoration-color: rgb(174, 200, 255);
+    text-decoration-color: rgb(52, 116, 255);
     text-decoration-line: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 10px;
@@ -155,17 +155,17 @@
     list-style-type: none;
     margin: auto;
     font-weight: 500;
-    border-bottom: 2px solid rgb(159, 189, 253);
+    border-bottom: 3px solid rgb(163, 190, 247);
     padding-left: 7px;
     width: 90%;
-    transition: border-bottom 0.5s, font-size 0.5s;
+    /* transition: border-bottom 0.5s, font-size 0.5s; */
     cursor: default;
   }
 
-  .affiliate-members-content ul li:hover {
+  /* .affiliate-members-content ul li:hover {
     border-bottom: 6px solid rgb(40, 84, 179);
     font-size: 1.2rem;
-  }
+  } */
 
 
 

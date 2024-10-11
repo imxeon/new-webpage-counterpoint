@@ -1,6 +1,4 @@
 @media (min-width: 768px) {
-
-  
   /* sections */
 
   #c-first-section-who-we-are {
@@ -20,20 +18,19 @@
     object-position: 0px -125px;
   }
 
-    
   /* second section team */
   #team-members-container {
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      align-items:flex-start;
-      gap: 0px;
-      column-gap: 40px;
-      row-gap: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0px;
+    column-gap: 40px;
+    row-gap: 40px;
   }
 
   .team-member-profile {
-      max-width: 380px;
+    max-width: 380px;
   }
 
   /* footer */
@@ -45,19 +42,17 @@
   #c-footer-section-heading {
     font-size: 1.7rem;
     margin-left: 16px;
-    /* margin-bottom: 5rem; */
   }
 
   #google-maps-embed {
     height: 95px;
   }
-  
+
   #c-footer-logo {
     width: 180px;
   }
 
   #footer-logo-and-social-accounts {
-    /* background-color: aqua; */
     width: 80%;
     margin: 30px auto;
     justify-content: space-between;
@@ -65,14 +60,12 @@
 }
 
 @media (min-width: 1024px) {
-
   /* sections */
 
   #c-first-section-image-container {
     margin-top: 2.5rem;
     width: 100%;
     height: 340px;
-
   }
 
   #c-first-section-image-container img {
@@ -81,7 +74,7 @@
   }
 
   /* Footer */
-  
+
   #c-footer-section-heading {
     margin-left: 0;
   }
@@ -110,14 +103,23 @@
     width: 30%;
     height: 130px;
   }
+}
 
+@media (min-width: 1100px) {
+  /* Our clients carousel */
+
+  .carousel-control-prev {
+    left: -100px;
+  }
+
+  .carousel-control-next {
+    right: -70px;
+  }
 }
 
 @media (min-width: 1200px) {
-
   #c-first-section-who-we-are {
     margin: auto;
-    /* background-color: yellowgreen; */
   }
 
   #c-first-section-content {
@@ -128,7 +130,6 @@
     justify-content: space-between;
     align-items: center;
     text-align: justify;
-    /* background-color: springgreen; */
   }
 
   #c-first-section-paragraphs {
@@ -170,7 +171,6 @@
     justify-content: space-between;
     width: 55%;
     max-width: 550px;
-    /* background-color: coral; */
   }
 
   #facebook-page-embed {
@@ -182,5 +182,4 @@
     width: 38%;
     height: 130px;
   }
-  
 }

@@ -1,7 +1,6 @@
 /* Tabs */
 
 @media (min-width: 768px) {
-
   #hero-image-container img {
     height: 310px;
     object-fit: cover;
@@ -13,96 +12,99 @@
 }
 
 @media (min-width: 945px) {
+  main {
+    margin-bottom: 7rem;
+  }
 
-    main {
-        margin-bottom: 7rem;
-    }
+  h1 {
+    margin: 1.3rem 0 0 0;
+  }
 
+  h4 {
+    margin-left: 25px;
+    text-align: left;
+  }
 
-    h1 {
-        margin: 1.3rem 0 0 0;
-    }
-
-    h4 {
-        margin-left: 25px;
-        text-align: left;
-    }
-
-    /* #student-service-image {
+  /* #student-service-image {
         object-fit: cover;
         object-position: 73%;
     } */
 
-    #student-services-content-container {
-        width: 100%;
-        max-width: 950px;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 2rem auto 0 auto;
-    }
+  #student-services-content-container {
+    width: 100%;
+    /* max-width: 950px; */
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin: 2rem auto 0 auto; */
+  }
 
-    #student-services-content-container a {
-        font-size: 1.2rem;
-        padding: 6px;
-        border: 2px solid rgb(255, 106, 106);
-        box-shadow: 0px 3px rgb(255, 106, 106);
-        border-radius: 8px;
-    }
-    
-    #student-services-content-container a:hover {
-        font-size: 1.4rem;
-        color: rgb(66, 66, 66);
-        box-shadow: 0px 5px 30px rgb(249, 226, 226);
-        background-color: rgb(249, 217, 217);
-    }
+  #student-services-content-container a {
+    font-size: 1.2rem;
+    padding: 7px;
+    border: 2px solid rgb(255, 106, 106);
+    box-shadow: 0px 3px rgb(255, 106, 106);
+    border-radius: 8px;
+    text-align: center;
+  }
 
-    .service-content-container {
-        width: 66%;
-        /* background-color: aqua; */
-    }
+  #student-services-content-container a:hover {
+    font-size: 1.4rem;
+    color: rgb(66, 66, 66);
+    box-shadow: 0px 5px 30px rgb(249, 226, 226);
+    background-color: rgb(249, 217, 217);
+  }
 
-    .service-content-container a {
-        margin: 1.6rem 0 0 2.5rem;
-        font-size: 1.4rem;
-        font-weight: 550;
-    }
-    
-    #student-services-section, #counterpoint-threesixty-club, #school-debate-club,
-    #enrichment-camp, #wsc-training {
-        max-width: 1200px;
-    }
+  .service-content-container {
+    width: 66%;
+    /* background-color: aqua; */
+  }
 
-    .service-image-content-container {
-        margin: 2rem 0 0 0;
-        display: flex;
-        justify-content: space-evenly;
-        /* align-items: start; */
-    }
+  .service-content-container a {
+    margin: 1.6rem 0 0 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 550;
+  }
 
-    .section-image-container {
-        width: 30%;
-        margin: 0rem auto 1rem auto;
-      }
+  #student-services-section,
+  #counterpoint-threesixty-club,
+  #school-debate-club,
+  #enrichment-camp,
+  #counterpoint-boot-camp,
+  #wsc-training {
+    width: 95%;
+    max-width: 1200px;
+  }
 
-    #school-debate-club img {
-      object-position: 50%;
-    }
+  .service-image-content-container {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: start; */
+  }
 
-    .section-images {
-      height: 100%;
-      object-fit: cover;
-      object-position: 1%;
-      border-radius: 12px;
-      }
+  .section-image-container {
+    width: 30%;
+    margin: 0rem auto 1rem auto;
+  }
 
-    #wsc-training img {
-        object-position: 55%;
-    }
+  #school-debate-club img {
+    object-position: 50%;
+  }
 
+  .section-images {
+    height: 100%;
+    object-fit: cover;
+    object-position: 1%;
+    border-radius: 12px;
+  }
+
+  #wsc-training img {
+    object-position: 55%;
+  }
 }
 
 @media (min-width: 1024px) {
-  #hero-image-container img{
+  #hero-image-container img {
     object-position: 0px -161px;
     height: 420px;
     border-radius: 20px;
@@ -112,66 +114,65 @@
 /* Footer media queries*/
 
 @media (min-width: 768px) {
-    footer {
-        padding: 0 25px 0 25px;
-        font-size: 1rem;
-      }
-    
-      #c-footer-section-heading {
-        font-size: 1.7rem;
-        margin-left: 16px;
-        /* margin-bottom: 5rem; */
-      }
-    
-      #google-maps-embed {
-        height: 95px;
-      }
-      
-      #c-footer-logo {
-        width: 180px;
-      }
-    
-      #footer-logo-and-social-accounts {
-        /* background-color: aqua; */
-        width: 80%;
-        margin: 30px auto;
-        justify-content: space-between;
-      }
+  footer {
+    padding: 0 25px 0 25px;
+    font-size: 1rem;
+  }
+
+  #c-footer-section-heading {
+    font-size: 1.7rem;
+    margin-left: 16px;
+    /* margin-bottom: 5rem; */
+  }
+
+  #google-maps-embed {
+    height: 95px;
+  }
+
+  #c-footer-logo {
+    width: 180px;
+  }
+
+  #footer-logo-and-social-accounts {
+    /* background-color: aqua; */
+    width: 80%;
+    margin: 30px auto;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 1024px) {
-    #c-footer-section-heading {
-        margin-left: 0;
-      }
-    
-      address {
-        justify-content: space-between;
-      }
-    
-      #address-text {
-        width: 45%;
-      }
-    
-      #embedded_pages {
-        display: flex;
-        justify-content: space-between;
-        width: 55%;
-        max-width: 515px;
-      }
-    
-      #facebook-page-embed {
-        display: block;
-        width: 65%;
-      }
-    
-      #google-maps-embed {
-        width: 30%;
-        height: 130px;
-      }
+  #c-footer-section-heading {
+    margin-left: 0;
+  }
+
+  address {
+    justify-content: space-between;
+  }
+
+  #address-text {
+    width: 45%;
+  }
+
+  #embedded_pages {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    max-width: 515px;
+  }
+
+  #facebook-page-embed {
+    display: block;
+    width: 65%;
+  }
+
+  #google-maps-embed {
+    width: 30%;
+    height: 130px;
+  }
 }
 
 @media (min-width: 1200px) {
-
   /* Footer */
 
   address {
@@ -206,6 +207,4 @@
     width: 38%;
     height: 130px;
   }
-
 }
-
