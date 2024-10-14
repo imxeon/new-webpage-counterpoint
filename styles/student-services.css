@@ -38,7 +38,7 @@ main {
 }
 
 #hero-image-container img {
-  height: 230px;
+  height: 215px;
   object-fit: cover;
   object-position: 0px -40px;
   object-position: 0px;
@@ -81,6 +81,21 @@ h4 {
   border-bottom: 4px solid rgb(255, 106, 106);
   font-size: 1.4rem;
 }
+
+/* links added later */
+.service-content-container a {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(93, 93, 93);
+  transition: text-decoration, 0.2s;
+}
+
+.service-content-container a:hover {
+  font-weight: 550;
+  text-decoration: underline;
+  color: rgb(252, 62, 62);
+}
+/* links END */
 
 #student-services-section,
 #counterpoint-threesixty-club,

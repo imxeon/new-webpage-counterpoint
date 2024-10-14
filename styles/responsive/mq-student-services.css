@@ -2,10 +2,12 @@
 
 @media (min-width: 768px) {
   #hero-image-container img {
-    height: 310px;
+    display: block;
+    border-radius: 8px;
+    width: 95%;
+    height: 300px;
     object-fit: cover;
-    object-position: 0 -100px;
-    object-position: 0;
+    object-position: 0 -35px;
     margin: auto;
     /* background-color: aquamarine; */
   }
@@ -59,12 +61,6 @@
     /* background-color: aqua; */
   }
 
-  .service-content-container a {
-    margin: 1.6rem 0 0 2.5rem;
-    font-size: 1.4rem;
-    font-weight: 550;
-  }
-
   #student-services-section,
   #counterpoint-threesixty-club,
   #school-debate-club,
@@ -105,8 +101,9 @@
 
 @media (min-width: 1024px) {
   #hero-image-container img {
-    object-position: 0px -161px;
-    height: 420px;
+    object-position: 0px -50px;
+    height: 400px;
+    width: 90%;
     border-radius: 20px;
   }
 }
