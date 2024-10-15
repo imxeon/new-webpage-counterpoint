@@ -2,7 +2,7 @@
 
 @media (min-width: 768px) {
 
-  #teams-section {
+  #team-section {
     margin-top: 3.2rem
   }
 }
@@ -14,7 +14,7 @@
         font-size: 4.5rem;
     }
 
-    #teams-section {
+    #team-section {
       margin-top: 48px;
     }
 
