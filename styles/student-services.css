@@ -38,10 +38,9 @@ main {
 }
 
 #hero-image-container img {
-  height: 215px;
+  height: 180px;
   object-fit: cover;
-  object-position: 0px -40px;
-  object-position: 0px;
+  object-position: 0 -14px;
   margin: auto;
   /* background-color: aquamarine; */
 }
@@ -84,16 +83,12 @@ h4 {
 
 /* links added later */
 .service-content-container a {
-  font-weight: 600;
   text-decoration: none;
-  color: rgb(93, 93, 93);
   transition: text-decoration, 0.2s;
 }
 
 .service-content-container a:hover {
-  font-weight: 550;
   text-decoration: underline;
-  color: rgb(252, 62, 62);
 }
 /* links END */
 

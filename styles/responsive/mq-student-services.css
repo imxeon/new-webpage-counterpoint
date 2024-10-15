@@ -1,3 +1,10 @@
+@media (min-width: 600px) {
+  #hero-image-container img {
+    object-position: 0 -36px;
+    height: 270px;
+  }
+}
+
 /* Tabs */
 
 @media (min-width: 768px) {
@@ -6,7 +13,7 @@
     border-radius: 8px;
     width: 95%;
     height: 300px;
-    object-fit: cover;
+    /* object-fit: cover; */
     object-position: 0 -35px;
     margin: auto;
     /* background-color: aquamarine; */
